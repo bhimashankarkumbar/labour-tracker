@@ -17,8 +17,12 @@ backend/*.jar
 backend/*.war
 
 # ---- Spring Boot ----
+backend/src/main/resources/application.properties
 backend/src/main/resources/application-prod.properties
 backend/src/main/resources/application-local.properties
+application.properties
+!application.properties.example
+!backend/src/main/resources/application.properties.example
 
 # ---- Node / npm ----
 frontend/node_modules/
