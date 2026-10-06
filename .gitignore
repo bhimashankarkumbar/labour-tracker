@@ -1,0 +1,52 @@
+# ===================================
+# Labour Tracker - .gitignore
+# ===================================
+
+# ---- Environment & Secrets ----
+.env
+.env.local
+.env.production
+*.env
+
+# ---- Java / Maven ----
+backend/target/
+backend/.mvn/wrapper/maven-wrapper.jar
+!backend/.mvn/wrapper/maven-wrapper.properties
+backend/*.class
+backend/*.jar
+backend/*.war
+
+# ---- Spring Boot ----
+backend/src/main/resources/application-prod.properties
+backend/src/main/resources/application-local.properties
+
+# ---- Node / npm ----
+frontend/node_modules/
+frontend/dist/
+frontend/.vite/
+frontend/.eslintcache
+
+# ---- IDE ----
+.idea/
+*.iml
+.vscode/
+*.suo
+*.user
+.classpath
+.project
+.settings/
+
+# ---- OS ----
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ---- Logs ----
+*.log
+logs/
+
+# ---- Docker ----
+docker-compose.override.yml
+
+# ---- Database ----
+database/*.sql.bak
